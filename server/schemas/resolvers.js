@@ -6,8 +6,9 @@ const { signToken } = require('../utils/auth');
 const resolvers = {
     Query: {
         me: async (parent, args, context ) => {
-            if(User.context) {
-                const userData = await (await User.findOne({ _id: context.user })).select('-__V -password');
+            if(context.user) {
+                const userData = await User.findOne({ _id: context.user._id })
+                .select('-__V -password');
 
                 return userData
             }
@@ -25,6 +26,7 @@ const resolvers = {
         }, 
         login: async (parent, {email, password }) => {
             const user = await User.findOne({ email });
+            console.log('login succesful')
 
             if (!user) {
                 throw new AuthenticationError('Incorrect credentials')
