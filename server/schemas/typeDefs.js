@@ -24,10 +24,7 @@ type User {
         link: String!
     }
 
-    type Query {
-        me: User
-    }
-
+    
     input BookInput {
         bookId: ID!
         authors: [String]
@@ -37,6 +34,11 @@ type User {
         link: String!
         
     }
+    
+    type Query {
+        me: User
+    }
+    
     type Mutation {
         login(email: String!, password: String! ): Auth
         addUser(username: String!, email: String!, password: String!): Auth
