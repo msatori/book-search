@@ -2,9 +2,9 @@
 
 
 ## Purpose 
-  For the purpose of this application, I refactored a RESTful API to an ApolloDB created with Graphql and React.
+  For the purpose of this application, I refactored a RESTful API to an Apollo server that works alongside Graphql. 
 
-    [Visit the Deployed Application Here.](https://obscure-scrubland-19269.herokuapp.com/ "Deployed App")
+[Visit the Deployed Application Here.](https://obscure-scrubland-19269.herokuapp.com/ "Deployed App")
 
   ## Table of Contents (Optional)
 
