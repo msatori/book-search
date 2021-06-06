@@ -23,7 +23,7 @@
     Use this application to search for books that you would like to read. Save books that you're interested in, and delete them when you're no longer interested in. 
 
   ## CREDITS
-    UW of WI Extended Campus Coding Bootcamp provided the source code, of which I built off of.
+    [Xander Rapstein - RESTful API & Frontend Design](https://github.com/Xandromus)
 
   ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
